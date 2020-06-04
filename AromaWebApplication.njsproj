@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{9bcdcb1c-d60a-49e5-a640-8d85e392166d}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>index.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package-lock.json" />
+        <Content Include="package.json" />
+        <Content Include="index.js" />
+        <Content Include="controllers\admin.js" />
+        <Content Include="controllers\customer.js" />
+        <Content Include="images\iPad Air.jpg" />
+        <Content Include="images\iPad Mini.jpg" />
+        <Content Include="images\iPad Pro.jpg" />
+        <Content Include="images\iPhone 11 Pro Max.jpg" />
+        <Content Include="images\iPhone 11 Pro.jpg" />
+        <Content Include="images\iPhone 11.jpg" />
+        <Content Include="images\iPhone X.jpg" />
+        <Content Include="images\iPhone XR.jpg" />
+        <Content Include="images\iPhone XS.jpg" />
+        <Content Include="images\Macbook 12.jpg" />
+        <Content Include="images\Macbook Air.jpg" />
+        <Content Include="images\Macbook Pro.jpg" />
+        <Content Include="models\Models.js" />
+        <Content Include="utils\EmailUtil.js" />
+        <Content Include="utils\MongodbUtil.js" />
+        <Content Include="utils\MongooseUtil.js" />
+        <Content Include="utils\MyConstants.js" />
+        <Content Include="utils\MyUtil.js" />
+        <Content Include="daos\mongodb\AdminDAO.js" />
+        <Content Include="daos\mongodb\CategoryDAO.js" />
+        <Content Include="daos\mongodb\CustomerDAO.js" />
+        <Content Include="daos\mongodb\OrderDAO.js" />
+        <Content Include="daos\mongodb\ProductDAO.js" />
+        <Content Include="daos\mongoose\AdminDAO.js" />
+        <Content Include="daos\mongoose\CategoryDAO.js" />
+        <Content Include="daos\mongoose\CustomerDAO.js" />
+        <Content Include="daos\mongoose\OrderDAO.js" />
+        <Content Include="daos\mongoose\ProductDAO.js" />
+        <Content Include="public\css\datatable.css" />
+        <Content Include="public\css\menu.css" />
+        <Content Include="public\css\styles.css" />
+        <Content Include="views\admin\home.ejs" />
+        <Content Include="views\admin\listcategory.ejs" />
+        <Content Include="views\admin\listcustomer.ejs" />
+        <Content Include="views\admin\listorder.ejs" />
+        <Content Include="views\admin\listproduct.ejs" />
+        <Content Include="views\admin\login.ejs" />
+        <Content Include="views\admin\_menu.ejs" />
+        <Content Include="views\customer\details.ejs" />
+        <Content Include="views\customer\home.ejs" />
+        <Content Include="views\customer\listproduct.ejs" />
+        <Content Include="views\customer\login.ejs" />
+        <Content Include="views\customer\mycart.ejs" />
+        <Content Include="views\customer\myorders.ejs" />
+        <Content Include="views\customer\myprofile.ejs" />
+        <Content Include="views\customer\signup.ejs" />
+        <Content Include="views\customer\_inform.ejs" />
+        <Content Include="views\customer\_menu.ejs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="controllers" />
+        <Folder Include="daos" />
+        <Folder Include="daos\mongodb" />
+        <Folder Include="daos\mongoose" />
+        <Folder Include="images" />
+        <Folder Include="models" />
+        <Folder Include="public" />
+        <Folder Include="public\css" />
+        <Folder Include="utils" />
+        <Folder Include="views" />
+        <Folder Include="views\admin" />
+        <Folder Include="views\customer" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>

@@ -1,0 +1,3 @@
+D:\OnlineShoppingSample\shopping-online\obj\Debug\AromaWebApplication.njsprojAssemblyReference.cache
+D:\OnlineShoppingSample\shopping-online\obj\Debug\AromaWebApplication.njsproj.CoreCompileInputs.cache
+D:\OnlineShoppingSample\shopping-online\bin\Microsoft.NodejsTools.WebRole.dll
